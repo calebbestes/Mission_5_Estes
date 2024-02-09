@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "MyServices";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Get a quota for chess tutoring</p>
+
+<div>
+    
+    <form>
+       <input type="text" value="Lessons are $5 per hour" readonly>
+       <br />
+       <label>Hours:</label>
+       <input type="number" min="0" placeholder = "Enter Hours" oninput="validity.valid||(value='');" id="Hours" />
+       <input type ="button" value ="X $5 per Hour" id="Calculate"/>
+       <input id="result" readonly/>
+   </form>
+</div>
+
+<script src="~\js\site.js"></script>
